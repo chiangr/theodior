@@ -1,0 +1,305 @@
+
+/* Sets the parameters for the whole webpage */
+
+* {
+	margin: 0;
+	padding: 0;
+	scroll-behavior:smooth;
+	overflow-x:hidden;
+
+	font-family: 'Questrial', sans-serif;
+}
+
+/* Adds background image of me to webpage */
+
+body{
+	transform-style:preserve-3d;
+	height:100%;
+	overflow-x:hidden;
+	perspective:1px;
+	background-image: url("img/theo.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 90%;
+	background-attachment:fixed;
+}
+
+/* Set it so the cursor changes to pointer when it goes over a button */
+
+button{
+	cursor:pointer;
+
+}
+
+/* Big Picture of the select webpages */
+
+#main {
+	position: relative;
+	height: 40em;
+	width: 100%;
+
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	flex-direction: column;
+
+	
+}
+
+#main-divider{
+	height:6em;
+	width:0.2em;
+	background-color:#f2f2f2;
+	opacity:0.7;
+	border-radius:2em;
+}
+
+#big-text{
+	width:40%;
+
+	display:flex;
+  	align-items: center;
+	justify-content: space-around;
+	border: 5px solid white;
+	padding-top: 2em;
+	padding-bottom: 2em;
+	border-radius: 1em;
+	background-color:white;
+}
+
+h1.main-content{
+	color:black;
+}
+
+#main-projects{
+	position: relative;
+	width: 100%;
+
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	flex-direction: column;
+}
+
+#big-text-projects{
+	width:100%;
+
+	display:flex;
+  	align-items: center;
+	justify-content: space-around;
+	border: 5px solid white;
+	padding-top: 2em;
+	padding-bottom: 2em;
+	background-color:white;
+}
+
+/* Divider */
+
+.divider{
+	width:100%;
+	background-color:white;
+	height: 3em;
+	opacity:0.6;
+}
+
+/* Director Buttons */
+
+.directors{
+	width:100%;
+	background-color:rgba(0, 0, 0, .5);
+	color:white;
+}
+
+#logotext{
+	text-align:center;
+	padding-top:.5em;
+	padding-left:1em;
+	float:left;
+}
+
+/* Navigation bar */
+
+.directors-list{
+	float:right;
+}
+
+.directors-button{
+	font-size:1em;
+	border:none;
+	background-color:transparent;
+	height:4em;
+	width: 7em;
+	transition: 0.3s;
+	float:right;
+	color:white;
+}
+
+.directors-button:hover{
+	background-color:white;
+	color:black;
+}
+
+
+/* Main content */
+
+.intro{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	flex-direction: column;
+	background-color:rgba(0, 0, 0, .95);
+	width:100%;
+	overflow-y:hidden;
+	padding-top:10em;
+	padding-bottom:10em;
+}
+
+/* The home page image row */
+
+.photo-row{
+	display:flex;
+	justify-content:center;
+	overflow-y:hidden;
+}
+
+.photo{
+	width:15em;
+	height:15em;
+	overflow:hidden;
+	background-size: cover;
+	margin:1em;
+}
+
+.photo-button{
+	width:100%;
+	height:100%;
+	border:none;
+	background-color:rgba(255,255,255,0);
+	transition:0.2s;
+	opacity:0;
+	font-size:2em;
+}
+
+.photo-button:hover{
+	opacity:1;
+	background-color:rgba(255,255,255,.4);
+}
+
+#photo-1{
+	background-image:url("img/theo-photo-1.jpg");
+}
+
+#photo-2{
+	background-image:url("img/theo-photo-2.jpg");
+}
+
+#photo-3{
+	background-image:url("img/theo-photo-3.jpg");
+}
+
+
+/* About webpage main content */
+
+.about-content{
+	display:flex;
+	justify-content:center;
+	color:white;
+}
+
+#about-textbox{
+	width:400px;
+	font-size:30px;
+	padding-top:3em;
+
+}
+
+#about-img{
+	margin-left:10em;
+	border: 5px solid white;
+}
+
+/* Projects webpage main content */
+
+.projects{
+	display:flex;
+	align-items:center;
+	color:white;
+	min-height:45em;
+}
+
+.project-text{
+	padding-left:10em;
+}
+
+.project-title{
+	margin-bottom:1em;
+}
+
+/* Contact webpage main content */
+
+.contact-content{
+	min-height:40em;
+	display:flex;
+	align-items:center;
+}
+
+.resume-content{
+	min-height:40em;
+	display:flex;
+	align-items:center;
+	width:30em;
+}
+
+.resume-text{
+	font-size:2em;
+	color:white;
+}
+
+.contact-button{
+	font-size:3em;
+	/*align-items: center;*/
+	border:.5em solid white;
+	background-color:transparent;
+	height:5em;
+	width: 10em;
+	transition: 0.3s;
+	float:right;
+	color:white;
+}
+
+.contact-button:hover{
+	background-color:white;
+	color:black;
+}
+
+
+footer{
+	height:15em;
+	background-color:white;
+	padding-top:8em;
+	padding-left:3em;
+	padding-right:3em;
+	color:black;
+}
+
+#footer-left{
+	float:left;
+	vertical-align: center
+}
+
+#footer-right{
+	float:right;
+}
+
+.footer-handle{
+	width:3em;
+}
+
+.footer-logo, .footer-text{
+	float:right;
+}
+
+.footer-text{
+	padding-top:1em;
+	padding-right:2em;
+}
